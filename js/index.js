@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(function() {
   var total = 0, enteredAmount, itemCount = 0;
 
   $('#entry').submit(calculate);
