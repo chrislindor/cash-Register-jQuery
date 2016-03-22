@@ -33,13 +33,14 @@ $(function() {
 
   }
 
-  // $(document).bind('keypress', function(event) {
-  //     if( event.which === 67 && event.shiftKey ) {
-  //         total = 0;
-  //         itemCount = 0;
-  //         printTotal();
-  //         clearEntries();
-  //     }
-  // });
+  $(document).bind('keypress', function(event) {
+      if( event.which === 67 && event.shiftKey ) {
+          event.preventDefault();
+          total = 0;
+          itemCount = 0;
+          printTotal();
+          clearEntries();
+      }
+  });
 
 });
